@@ -11,7 +11,7 @@ int main(){
     double w = Power(x,2);
     double q = mul(w,2);
     double a = add(e,q);
-     printf("f(x) = 3x +2x^x = %0.4f \n" ,a);
+     printf("f(x) = 3x +2x^2 = %0.4f \n" ,a);
      
      double n = mul(Power(x,3),4);
      double m = div(n,5);
