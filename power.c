@@ -4,6 +4,17 @@ double Power(double x , int y){
     {
        return 1;
     }
+    if (y<0)
+    {
+        y = y*(-1);
+        while (y>1)
+        {
+           ans *=x; 
+        y--; 
+        }
+        ans = 1/ans;
+        return ans;
+    }
     
     while (y>1)
     {
@@ -12,7 +23,7 @@ double Power(double x , int y){
     }
     return ans;
 }
-
+#define n 2.718281828
 double Exponent(int x){
-     return Power(2.718281828,x);
+     return Power(n,x);
 }

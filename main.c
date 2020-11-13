@@ -3,20 +3,20 @@
 
 int main(){
      float x =0;
-     printf("Enter the  number: ");
+     printf("Please inset a real number:");
      scanf("%f" , &x);
-     printf("f(x) = e^x+x^3-2  %0.4f \n",sub(add(Exponent(x),Power(x,3)),2));
+     printf("The value of f(𝑥) = e^x+x^3-2 at the point %lf is: %0.4f \n",x,sub(add(Exponent(x),Power(x,3)),2));
     
     double e = mul(x,3);
     double w = Power(x,2);
     double q = mul(w,2);
     double a = add(e,q);
-     printf("f(x) = 3x +2x^2 = %0.4f \n" ,a);
+     printf("The value of f(𝑥) = 3x +2x^2 at the point %lf is: %0.4f \n" ,x,a);
      
      double n = mul(Power(x,3),4);
      double m = div(n,5);
      double z = mul(x,2);
      double t = sub(m,z);
-     printf("f(x) = (4x^3)/5-2x = %0.4f \n" , t);
+     printf("The value of f(𝑥) = (4x^3)/5-2x at the point %lf is: %0.4f \n" ,x, t);
     return 0;
 }
